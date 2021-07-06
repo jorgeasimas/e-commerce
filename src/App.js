@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 
@@ -52,7 +52,15 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage} />
           <Route exact path='/shop/hats' component={HatsPage} />
           <Route exact path='/shop' component={ShopPage} />
-          <Route exact path='/sign-in' component={SignInAndSignUpPage}/>
+          <Route exact path='/sign-in' 
+                 render ={() =>
+                  this.props.currentUser 
+                    ? 
+                    (<Redirect to ='/' />) //if currentUser is logged in doesn't allow to access SignInAndSignUpPage
+                    : 
+                    (<SignInAndSignUpPage />)
+                 }
+                 />
         </switch>
       </div>
     );
@@ -61,8 +69,14 @@ class App extends React.Component {
 
 }
 
+const mapStateToProps = state => ({//state is the Rootreducer
+  currentUser: state.user.currentUser
+});
+
 const mapDispatchToProps = dispatch => ({
     setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(null, mapDispatchToProps)(App);//first argument set null as there is no need to retrieve the set, only to set the state
+export default connect(
+  mapStateToProps, //first argument can be set as null if there is no need to retrieve the state
+  mapDispatchToProps)(App);//second argument only SET the state
