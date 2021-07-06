@@ -1,5 +1,7 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setCurrentUser } from './redux/user/user.actions';
 
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
@@ -17,33 +19,23 @@ const HatsPage = (props) => (
 
 
 class App extends React.Component {
-  constructor(){
-    super();
 
-    this.state = {
-      currentUser: null
-    }
-
-  }
-
-  unsubscribeFromAuth = null
+  unsubscribeFromAuth = null;
 
   componentDidMount() {
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if(userAuth) {//if it's logged in
         const userRef = await creatUserProfileDocument(userAuth);//it gets the userRef of a new or old user
         
         userRef.onSnapshot(snapShot => {
-          this.setState({
-            currentUser: {
+          this.props.setCurrentUser({
               id: snapShot.id,
               ...snapShot.data()
-            }
           });
-          console.log(this.state);
         });
       }
-        this.setState({ currentUser: userAuth});//if userAuth is not logged in it will set the current user to null 
+        this.props.setCurrentUser(userAuth);//if userAuth is not logged in it will set the current user to null 
 
     });
   }
@@ -55,7 +47,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/shop/hats' component={HatsPage} />
@@ -69,4 +61,8 @@ class App extends React.Component {
 
 }
 
-export default App;
+const mapDispatchToProps = dispatch => ({
+    setCurrentUser: user => dispatch(setCurrentUser(user))
+});
+
+export default connect(null, mapDispatchToProps)(App);//first argument set null as there is no need to retrieve the set, only to set the state
