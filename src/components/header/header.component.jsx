@@ -6,8 +6,10 @@ import { connect } from 'react-redux';
 import { auth } from '../../firebase/firebase.utils';
 
 import { ReactComponent as Logo} from '../../assets/crown.svg';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
-const Header = ({ currentUser}) => (
+const Header = ({ currentUser, hidden}) => (
     <div className='header'>
         <Link className='logo-container' to='/'>
          <Logo className='logo'/>  
@@ -25,12 +27,27 @@ const Header = ({ currentUser}) => (
                 :
                 (<Link className='option' to='/sign-in'>SIGN IN</Link>)
             }
+            <CartIcon />
         </div>
+        {
+          hidden ? null :
+          <CartDropdown />
+        }
+
+        
     </div>
 )
 
-const mapStateToProps = state => ({//state is the Rootreducer
-    currentUser: state.user.currentUser
-});
+/**const mapStateToProps = state => ({
+    currentUser: state.user.currentUser,
+    cart: hidden 
+});**/
+
+//distructure off of state we get user and off of user we get currentUser
+const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
+    currentUser,
+    hidden
+})
 
 export default connect(mapStateToProps)(Header);
+//allow the component to have access to current state of a prop
