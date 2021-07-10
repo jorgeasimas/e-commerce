@@ -9,7 +9,7 @@ import { ReactComponent as Logo} from '../../assets/crown.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
-const Header = ({ currentUser, hidden}) => (
+const Header = ({currentUser, hidden}) => (//receiving state from redux in curly brackets
     <div className='header'>
         <Link className='logo-container' to='/'>
          <Logo className='logo'/>  
