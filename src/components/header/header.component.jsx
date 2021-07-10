@@ -13,8 +13,16 @@ const Header = ({ currentUser, hidden}) => (
     <div className='header'>
         <Link className='logo-container' to='/'>
          <Logo className='logo'/>  
+         
         </Link>
         <div className='options'>
+        {
+            currentUser 
+            ? 
+            (<div className='option'><span>Hi {currentUser.displayName}, you logged with {currentUser.email}</span></div>)
+            :
+            (<div className='option'></div>)
+        }
             <Link className='option' to ='/shop'>
                 SHOP
             </Link>    
@@ -25,9 +33,10 @@ const Header = ({ currentUser, hidden}) => (
                 currentUser ? (
                 <div className='option' onClick={() => auth.signOut()}>SIGN OUT</div>)
                 :
-                (<Link className='option' to='/sign-in'>SIGN IN</Link>)
+                (<Link className='option' to='/sign-in'>SIGN IN </Link>)
             }
             <CartIcon />
+            
         </div>
         {
           hidden ? null :
@@ -38,16 +47,18 @@ const Header = ({ currentUser, hidden}) => (
     </div>
 )
 
-/**const mapStateToProps = state => ({
+//user and cart are defined in Root-Reducer
+const mapStateToProps = state => ({
     currentUser: state.user.currentUser,
-    cart: hidden 
-});**/
+    hidden: state.cart.hidden 
+});
 
-//distructure off of state we get user and off of user we get currentUser
-const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
+//user and cart are defined in Root-Reducer
+//destructure off of state we get user and off of user we get currentUser, off the cart we get hidden
+/**const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
     currentUser,
     hidden
-})
+})**/
 
 export default connect(mapStateToProps)(Header);
 //allow the component to have access to current state of a prop

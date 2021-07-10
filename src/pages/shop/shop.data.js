@@ -140,36 +140,36 @@ const SHOP_DATA = [
         {
           id: 18,
           name: 'Black Jean Shearling',
-          // imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-          imageUrl: "/images/shop-img/jackets/black-shearling.png",
+          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+          //imageUrl: "/images/shop-img/jackets/black-shearling.png",
           price: 125
         },
         {
           id: 19,
           name: 'Blue Jean Jacket',
-          // imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-          imageUrl: "/images/shop-img/jackets/blue-jean-jacket.png",
+          imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+          //imageUrl: "/images/shop-img/jackets/blue-jean-jacket.png",
           price: 90
         },
         {
           id: 20,
           name: 'Grey Jean Jacket',
-          // imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-          imageUrl: "/images/shop-img/jackets/grey-jean-jacket.png",
+          imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+          //imageUrl: "/images/shop-img/jackets/grey-jean-jacket.png",
           price: 90
         },
         {
           id: 21,
           name: 'Brown Shearling',
-          // imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-          imageUrl: "/images/shop-img/jackets/brown-shearling.png",
+          imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+          //imageUrl: "/images/shop-img/jackets/brown-shearling.png",
           price: 165
         },
         {
           id: 22,
           name: 'Tan Trench',
-          // imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-          imageUrl: "/images/shop-img/jackets/brown-trench.png",
+          imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+          //imageUrl: "/images/shop-img/jackets/brown-trench.png",
           price: 185
         }
       ]
@@ -182,50 +182,50 @@ const SHOP_DATA = [
         {
           id: 23,
           name: 'Blue Tanktop',
-          // imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-          imageUrl: "/images/shop-img/womens/blue-tank.png",
+          imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+          //imageUrl: "/images/shop-img/womens/blue-tank.png",
           price: 25
         },
         {
           id: 24,
           name: 'Floral Blouse',
-          // imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-          imageUrl: "/images/shop-img/womens/floral-blouse.png",
+          imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
+          //imageUrl: "/images/shop-img/womens/floral-blouse.png",
           price: 20
         },
         {
           id: 25,
           name: 'Floral Dress',
-          // imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-          imageUrl: "/images/shop-img/womens/floral-skirt.png",
+          imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+          //imageUrl: "/images/shop-img/womens/floral-skirt.png",
           price: 80
         },
         {
           id: 26,
           name: 'Red Dots Dress',
-          // imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-          imageUrl: "/images/shop-img/womens/red-polka-dot-dress.png",
+          imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+          //imageUrl: "/images/shop-img/womens/red-polka-dot-dress.png",
           price: 80
         },
         {
           id: 27,
           name: 'Striped Sweater',
-          // imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-          imageUrl: "/images/shop-img/womens/striped-sweater.png",
+          imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
+          //imageUrl: "/images/shop-img/womens/striped-sweater.png",
           price: 45
         },
         {
           id: 28,
           name: 'Yellow Track Suit',
-          // imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-          imageUrl: "/images/shop-img/womens/yellow-track-suit.png",
+          imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+          //imageUrl: "/images/shop-img/womens/yellow-track-suit.png",
           price: 135
         },
         {
           id: 29,
           name: 'White Blouse',
-          // imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-          imageUrl: "/images/shop-img/womens/white-vest.png",
+          imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
+          //imageUrl: "/images/shop-img/womens/white-vest.png",
           price: 20
         }
       ]
