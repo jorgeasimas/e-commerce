@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.styles.scss';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
+import { selectCurrentUser } from '../../redux/user/user.selector';
 
 import { auth } from '../../firebase/firebase.utils';
 
@@ -47,11 +50,25 @@ const Header = ({currentUser, hidden}) => (//receiving state from redux in curly
     </div>
 )
 
-//user and cart are defined in Root-Reducer
+//using selectors
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser,
+    hidden: selectCartHidden
+});
+
+/**OR 
+const mapStateToProps = state => ({
+    currentUser: selectCurrentUser(state),
+    hidden: selectCartHidden(state) 
+});
+
+**/
+
+/**user and cart are defined in Root-Reducer
 const mapStateToProps = state => ({
     currentUser: state.user.currentUser,
     hidden: state.cart.hidden 
-});
+}); **/
 
 //user and cart are defined in Root-Reducer
 //destructure off of state we get user and off of user we get currentUser, off the cart we get hidden

@@ -5,7 +5,8 @@ import { withRouter } from 'react-router-dom';
 const MenuItem = (props) => (
      <div  
         className= {`${props.size} menu-item`} 
-        onClick={() => props.history.push(`${props.match.url}${props.linkUrl}`) }
+        onClick={() => props.history.push(`${props.match.url}${props.linkUrl}`) }//it matches the current URL
+        //and adds the link for the picture URL
         > 
             
             <div className='background-image' style={{backgroundImage: `url(${props.imageUrl})`}}/>
