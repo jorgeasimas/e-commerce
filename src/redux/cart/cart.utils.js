@@ -17,3 +17,17 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {//original array plu
     //the item not found inside the array it will add the new item inside the array and create a prop quantity
     //prop will be set as 1 
 }
+export const decreaseItemToCart = (cartItems, cartItemToDec) => {
+    const existingCartItem = cartItems.find(cartItem => cartItem.id === cartItemToDec.id);
+    
+    if (existingCartItem.quantity ===1){
+        return cartItems.filter(cartItem => cartItem.id !== cartItemToDec.id);
+        //cartItemToDec is the payload.id
+        //cloning the cartItems array (old) comparing with payload and creating a new one excludind the payload
+    }
+    return cartItems.map(cartItem => 
+            cartItem.id === cartItemToDec.id
+            ? {...cartItem, quantity: cartItem.quantity -1}//it will increment the quantity prop
+            : cartItem //For not repeated item it will leave as it is
+        ); 
+};
