@@ -6,7 +6,7 @@ const CartItem = ({items}) => (//will state from redux
         <img src={items.imageUrl} alt='item'/>
         <div className='item-details'>
             <span className='name'>{items.name}</span>
-            <span className='price'>{items.quantity} x USD{items.price}</span>
+            <span className='price'>{items.quantity} x ${items.price}</span>
         </div>
 
     </div>

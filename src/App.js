@@ -13,12 +13,13 @@ import Header from './components/header/header.component';
 import {auth, creatUserProfileDocument} from './firebase/firebase.utils';
 import CheckOutPage from './pages/checkout/checkout.component';
 
+/*
 const HatsPage = (props) => (
   <div>
     <h1>HATS PAGE</h1>
     <button type="button" class="btn btn-primary" onClick={() => props.history.push('/')}>Homepage</button>
   </div>
-)
+)*/
 
 
 class App extends React.Component {
@@ -53,8 +54,7 @@ class App extends React.Component {
         <Header />
         <switch>
           <Route exact path='/' component={HomePage} />
-          <Route exact path='/shop/hats' component={HatsPage} />
-          <Route exact path='/shop' component={ShopPage} />
+          <Route path='/shop' component={ShopPage} />
           <Route exact path='/checkout' component={CheckOutPage} />
           <Route exact path='/sign-in' 
                  render ={() =>

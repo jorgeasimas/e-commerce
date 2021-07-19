@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    hats:{
       id: 1,
       title: 'Hats',
       routeName: 'hats',
@@ -69,7 +69,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    sneakers:{
       id: 2,
       title: 'Sneakers',
       routeName: 'sneakers',
@@ -132,7 +132,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    jackets:{
       id: 3,
       title: 'Jackets',
       routeName: 'jackets',
@@ -174,7 +174,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    womens:{
       id: 4,
       title: 'Womens',
       routeName: 'womens',
@@ -230,7 +230,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    mens:{
       id: 5,
       title: 'Mens',
       routeName: 'mens',
@@ -238,47 +238,47 @@ const SHOP_DATA = [
         {
           id: 30,
           name: 'Camo Down Vest',
-          // imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-          imageUrl: "/images/shop-img/mens/camo-vest.png",
+          imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+          //imageUrl: "/images/shop-img/mens/camo-vest.png",
           price: 325
         },
         {
           id: 31,
           name: 'Floral T-shirt',
-          // imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-          imageUrl: "/images/shop-img/mens/floral-shirt.png",
+          imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+          //imageUrl: "/images/shop-img/mens/floral-shirt.png",
           price: 20
         },
         {
           id: 32,
           name: 'Black & White Longsleeve',
-          // imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-          imageUrl: "/images/shop-img/mens/long-sleeve.png",
+          imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
+          //imageUrl: "/images/shop-img/mens/long-sleeve.png",
           price: 25
         },
         {
           id: 33,
           name: 'Pink T-shirt',
-          // imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-          imageUrl: "/images/shop-img/mens/pink-shirt.png",
+          imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
+          //imageUrl: "/images/shop-img/mens/pink-shirt.png",
           price: 25
         },
         {
           id: 34,
           name: 'Jean Long Sleeve',
-          // imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-          imageUrl: "/images/shop-img/mens/roll-up-jean-shirt.png",
+          imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
+          //imageUrl: "/images/shop-img/mens/roll-up-jean-shirt.png",
           price: 40
         },
         {
           id: 35,
           name: 'Burgundy T-shirt',
-          // imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-          imageUrl: "/images/shop-img/mens/polka-dot-shirt.png",
+          imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
+          //imageUrl: "/images/shop-img/mens/polka-dot-shirt.png",
           price: 25
         }
       ]
     }
-  ];
+};
   
   export default SHOP_DATA;

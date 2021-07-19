@@ -1,5 +1,5 @@
 .collection-item {
-  width: 22%;
+  width: 22vw;//changing from % to vw (which is the % of the div it is in)
   display: flex;
   flex-direction: column;
   height: 350px;
