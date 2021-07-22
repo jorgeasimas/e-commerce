@@ -17,4 +17,15 @@ export const selectCollections = (collectionUrlParam) =>
 export const selectCollectionsObject = createSelector(
     [selectCollection],//gives access to collection
     collections => Object.keys(collections).map(key => collections[key])
+    //Object.keys(collection) gives the keys of collection
+    //map over array of keys to return the items of  the specific key value in collections
 );
+
+/*
+const obj = {a:1, b:2, c:3};
+Object.keys(obj);
+(3) ["a", "b", "c"]
+Object.keys(obj).map(key => obj[key]);
+(3) [1, 2, 3]
+
+*/
