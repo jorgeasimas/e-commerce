@@ -1,36 +1,36 @@
 const INITIAL_STATE = {
     sections: [
         {
-          title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: 'harness',
+          imageUrl: 'https://www.iksurfmag.com/wp-content/uploads/2015/09/IMG_0178.jpg',
           id: 1,
-          linkUrl: 'shop/hats'
+          linkUrl: 'shop/harness'
         },
         {
-          title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          title: 'kites',
+          imageUrl: 'https://i.ytimg.com/vi/o_pzCLYRzgU/maxresdefault.jpg',
           id: 2,
-          linkUrl: 'shop/jackets'
+          linkUrl: 'shop/kites'
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: 'control_bars',
+          imageUrl: 'https://th.bing.com/th/id/R.21d71b071719c195cb38d24f69f6a5b7?rik=XZishO4eViLxIg&pid=ImgRaw',
           id: 3,
-          linkUrl: 'shop/sneakers'
+          linkUrl: 'shop/control_bars'
         },
         {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          title: 'boards',
+          imageUrl: 'https://mk0theadventuregfnyq.kinstacdn.com/wp-content/uploads/best-kitesurfing-boards.jpg',
           size: 'large',
           id: 4,
-          linkUrl: 'shop/womens'
+          linkUrl: 'shop/boards'
         },
         {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          title: 'hydrofoil',
+          imageUrl: 'https://www.iksurfmag.com/wp-content/uploads/2016/11/unspecified-2.jpeg',
           size: 'large',
           id: 5,
-          linkUrl: 'shop/mens'
+          linkUrl: 'shop/hydrofoil'
         }]
 }
 
