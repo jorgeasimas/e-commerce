@@ -126,35 +126,35 @@ const SHOP_DATA = {
         {
           id: 18,
           name: 'Black Jean Shearling',
-          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/10550/26892/flysurfer-2020-force-control-bar__79301.1602100811.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/jackets/black-shearling.png",
           price: 125
         },
         {
           id: 19,
           name: 'Blue Jean Jacket',
-          imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/10259/26313/duotone-2021-loop-rope__50807.1599761195.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/jackets/blue-jean-jacket.png",
           price: 90
         },
         {
           id: 20,
           name: 'Grey Jean Jacket',
-          imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/10245/26306/duotone-2021-trust-control-bar__27941.1599676494.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/jackets/grey-jean-jacket.png",
           price: 90
         },
         {
           id: 21,
           name: 'Brown Shearling',
-          imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/10165/26165/north-2021-navigator-control-bar__83798.1598897965.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/jackets/brown-shearling.png",
           price: 165
         },
         {
           id: 22,
           name: 'Tan Trench',
-          imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/10244/26307/duotone-2021-click-control-bar__66334.1599683118.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/jackets/brown-trench.png",
           price: 185
         }
@@ -162,20 +162,20 @@ const SHOP_DATA = {
     },
     boards:{
       id: 4,
-      title: 'Womens',
-      routeName: 'womens',
+      title: 'Boards',
+      routeName: 'boards',
       items: [
         {
           id: 23,
-          name: 'Blue Tanktop',
-          imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+          name: 'Ocean Rodep',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/9802/25805/duke__73782.1594922116.JPG?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/womens/blue-tank.png",
           price: 25
         },
         {
           id: 24,
-          name: 'Floral Blouse',
-          imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
+          name: 'Ocean Rodeo Jester',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/9289/25328/Ocean_Rodeo_Jester__29376.1592929886.JPG?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/womens/floral-blouse.png",
           price: 20
         },
@@ -188,29 +188,29 @@ const SHOP_DATA = {
         },
         {
           id: 26,
-          name: 'Red Dots Dress',
-          imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+          name: '2020 Duotone',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/8146/22523/44200-3405_Wam__48242.1567265704.png?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/womens/red-polka-dot-dress.png",
           price: 80
         },
         {
           id: 27,
-          name: 'Striped Sweater',
-          imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
+          name: '2020 North',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/7918/21953/85002.200005_100_05__90426.1564689906.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/womens/striped-sweater.png",
           price: 45
         },
         {
           id: 28,
-          name: 'Yellow Track Suit',
-          imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+          name: '2020 Naish',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/7831/21623/2020KB_TwinTips_Switch_Deck_LoRes__37810.1564161166.png?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/womens/yellow-track-suit.png",
           price: 135
         },
         {
           id: 29,
-          name: 'White Blouse',
-          imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
+          name: '2020 Cabrinha',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/1280x1280/products/12065/29817/2019-x-breed-5-1-1-1000x1000__57474.1616593553.jpg?c=2?imbypass=on',
           //imageUrl: "/images/shop-img/womens/white-vest.png",
           price: 20
         }
@@ -223,43 +223,43 @@ const SHOP_DATA = {
       items: [
         {
           id: 30,
-          name: 'Camo Down Vest',
-          imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+          name: 'MFS Hydros',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/7847/22008/120236015_main-2__60655.1565107058.jpg?c=2',
           //imageUrl: "/images/shop-img/mens/camo-vest.png",
           price: 325
         },
         {
           id: 31,
-          name: 'Floral T-shirt',
-          imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+          name: 'Quatro 2021 Wing',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/13120/30752/kt-2021-wing-drifter-pro-foilboard-top__70071.1626203339.jpg?c=2',
           //imageUrl: "/images/shop-img/mens/floral-shirt.png",
           price: 20
         },
         {
           id: 32,
-          name: 'Black & White Longsleeve',
-          imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
+          name: '2021 Startboard',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/10145/26152/46__61796.1598714881.png?c=2',
           //imageUrl: "/images/shop-img/mens/long-sleeve.png",
           price: 25
         },
         {
           id: 33,
-          name: 'Pink T-shirt',
-          imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
+          name: '2021 Slingshot',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/10275/26344/slingshot-2021-flying-fish-foilboard__30089.1599848341.jpg?c=2',
           //imageUrl: "/images/shop-img/mens/pink-shirt.png",
           price: 25
         },
         {
           id: 34,
-          name: 'Jean Long Sleeve',
-          imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
+          name: '2020 Naish Hover',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/7765/21373/1__23645.1562954761.PNG?c=2',
           //imageUrl: "/images/shop-img/mens/roll-up-jean-shirt.png",
           price: 40
         },
         {
           id: 35,
-          name: 'Burgundy T-shirt',
-          imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
+          name: '2021 Crazyfly',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/12642/30354/crazyfly-2021-chill-foilboard1__56322.1623870586.jpg?c=2',
           //imageUrl: "/images/shop-img/mens/polka-dot-shirt.png",
           price: 25
         }
