@@ -181,8 +181,8 @@ const SHOP_DATA = {
         },
         {
           id: 25,
-          name: 'Floral Dress',
-          imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+          name: '2021 PKG',
+          imageUrl: 'https://cdn11.bigcommerce.com/s-cam6oqe/images/stencil/500x500/products/12047/29814/liquid-force-2021-pkg-136-all__62596.1616427424.jpg?c=2',
           //imageUrl: "/images/shop-img/womens/floral-skirt.png",
           price: 80
         },
