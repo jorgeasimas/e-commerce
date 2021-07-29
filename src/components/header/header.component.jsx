@@ -12,6 +12,48 @@ import { ReactComponent as Logo} from '../../assets/crown.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
+import { HeaderContainer, LogoContainer, OptionsContainerStyles, OptionDiv, OptionLink } from './header.styles';
+
+const Header = ({currentUser, hidden}) => (//receiving state from redux in curly brackets
+    <HeaderContainer>
+        <LogoContainer to='/'>
+         <Logo className='logo'/>  
+         
+        </LogoContainer>
+        <OptionDiv>
+        {
+            currentUser 
+            ? 
+            (<OptionDiv><span>Hi {currentUser.displayName}, you logged with {currentUser.email}</span></OptionDiv>)
+            :
+            (<OptionDiv></OptionDiv>)
+        }
+            <OptionLink to ='/shop'>
+                SHOP
+            </OptionLink>    
+            <OptionLink to ='/shop'>
+                CONTACT
+            </OptionLink> 
+            {
+                currentUser ? (
+                <OptionDiv> onClick={() => auth.signOut()}SIGN OUT</OptionDiv>)
+                :
+                (<OptionLink to='/sign-in'>SIGN IN </OptionLink>)
+            }
+            <CartIcon />
+            
+        </OptionDiv>
+        {
+          hidden ? null :
+          <CartDropdown />
+        }
+
+        
+    </HeaderContainer>
+)
+
+
+/*
 const Header = ({currentUser, hidden}) => (//receiving state from redux in curly brackets
     <div className='header'>
         <Link className='logo-container' to='/'>
@@ -50,6 +92,7 @@ const Header = ({currentUser, hidden}) => (//receiving state from redux in curly
     </div>
 )
 
+*/
 //using selectors
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
