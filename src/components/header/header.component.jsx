@@ -35,8 +35,8 @@ const Header = ({currentUser, hidden}) => (//receiving state from redux in curly
                 CONTACT
             </OptionLink> 
             {
-                currentUser ? (
-                <OptionDiv> onClick={() => auth.signOut()}SIGN OUT</OptionDiv>)
+                currentUser ? (//if currentUser is true (logged in)
+                <OptionDiv onClick={() => auth.signOut()}>SIGN OUT</OptionDiv>)
                 :
                 (<OptionLink to='/sign-in'>SIGN IN </OptionLink>)
             }

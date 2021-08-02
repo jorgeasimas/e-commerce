@@ -13,6 +13,7 @@ import Header from './components/header/header.component';
 import {auth, creatUserProfileDocument} from './firebase/firebase.utils';
 import CheckOutPage from './pages/checkout/checkout.component';
 
+
 /*
 const HatsPage = (props) => (
   <div>
@@ -40,6 +41,7 @@ class App extends React.Component {
         });
       }
         this.props.setCurrentUser(userAuth);//if userAuth is not logged in it will set the current user to null 
+//        addCollectionsAndDocuments('collections', this.props.collectionArray.map(({title, items}) => ({title, items})));
 
     });
   }
@@ -80,6 +82,7 @@ const mapStateToProps = state => ({//state is the Rootreducer
 //using selectors
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
+//  collectionArray: selectCollectionsObject
 });
 
 
